@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Médicos - Centro de Salud San Cayetano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo-san-cayetano.png" alt="Logo San Cayetano" class="logo-navbar me-2">
+                <span>Centro de Salud San Cayetano</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="medicos.html">Médicos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="turnos.html">Turnos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mis-turnos.html">Mis Turnos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html" id="login-link">Acceder</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="logout-link" style="display:none;" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="text-center mb-4">
+            <img src="img/logo-san-cayetano.png" alt="Logo San Cayetano" class="img-fluid logo-page">
+        </div>
+        <h2 class="mb-4 text-center">Nuestros Médicos</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <div class="card-img-container">
+                        <img src="img/medico-1.jpg" alt="Dr. Juan Pérez" class="card-img-top img-medico">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Juan Pérez</h5>
+                        <p class="card-text">Médico General</p>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt text-success me-2"></i>
+                            Lunes, Miércoles y Viernes
+                        </p>
+                        <p class="card-text">
+                            <i class="fas fa-clock text-success me-2"></i>
+                            8:00 - 16:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <div class="card-img-container">
+                        <img src="img/medico-2.jpg" alt="Dra. Ana Gómez" class="card-img-top img-medico">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dra. Ana Gómez</h5>
+                        <p class="card-text">Pediatra</p>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt text-success me-2"></i>
+                            Martes, Jueves y Sábado
+                        </p>
+                        <p class="card-text">
+                            <i class="fas fa-clock text-success me-2"></i>
+                            8:00 - 16:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <div class="card-img-container">
+                        <img src="img/medico-3.jpg" alt="Dr. Carlos López" class="card-img-top img-medico">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Carlos López</h5>
+                        <p class="card-text">Cardiólogo</p>
+                        <p class="card-text">
+                            <i class="fas fa-calendar-alt text-success me-2"></i>
+                            Lunes y Jueves
+                        </p>
+                        <p class="card-text">
+                            <i class="fas fa-clock text-success me-2"></i>
+                            10:00 - 18:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-success text-white text-center py-3">
+        <p>&copy; 2025 Centro de Salud San Cayetano. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

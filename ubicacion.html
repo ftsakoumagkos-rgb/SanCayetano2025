@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación - Centro de Salud San Cayetano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo-san-cayetano.png" alt="Logo San Cayetano" class="logo-navbar me-2">
+                <span>Centro de Salud San Cayetano</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="medicos.html">Médicos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="turnos.html">Turnos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mis-turnos.html">Mis Turnos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ubicacion.html">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html" id="login-link">Acceder</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="logout-link" style="display:none;" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="text-center mb-4">
+            <img src="img/logo-san-cayetano.png" alt="Logo San Cayetano" class="img-fluid logo-page">
+        </div>
+        <h2 class="text-center mb-4">Nuestra Ubicación</h2>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-map-marker-alt text-success me-2"></i>Dirección</h5>
+                        <p class="card-text">
+                            <strong>Centro de Salud San Cayetano</strong><br>
+                            Calle Principal 1234<br>
+                            Ciudad, Provincia<br>
+                            Código Postal 1234
+                        </p>
+                        
+                        <h5 class="card-title mt-4"><i class="fas fa-clock text-success me-2"></i>Horarios de Atención</h5>
+                        <p class="card-text">
+                            <strong>Lunes a Viernes:</strong> 8:00 - 18:00<br>
+                            <strong>Sábados:</strong> 8:00 - 14:00<br>
+                            <strong>Domingos:</strong> Cerrado
+                        </p>
+                        
+                        <h5 class="card-title mt-4"><i class="fas fa-phone text-success me-2"></i>Contacto</h5>
+                        <p class="card-text">
+                            <strong>Teléfono:</strong> (011) 1234-5678<br>
+                            <strong>Email:</strong> info@san-cayetano.com.ar
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-map text-success me-2"></i>¿Cómo llegar?</h5>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.123456789!2d-58.123456789!3d-34.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1ses!2sar!4v1234567890123!5m2!1ses!2sar" 
+                                width="100%" 
+                                height="400" 
+                                style="border:0; border-radius: 10px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-success text-white text-center py-3">
+        <p>&copy; 2025 Centro de Salud San Cayetano. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
